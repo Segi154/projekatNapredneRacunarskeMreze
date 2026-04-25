@@ -27,14 +27,14 @@ public class TrenerController {
         return ResponseEntity.status(HttpStatus.CREATED).body(trenerService.add(req,file));
     }
 
-    // UPDATE: PUT /trener/{id}
     @PutMapping("/{id}")
     public ResponseEntity<UpdateTrenerResponse> update(@PathVariable Integer id, @Valid @RequestBody UpdateTrenerRequest req) {
+        System.out.println("TEST!");
         return ResponseEntity.ok(trenerService.update(id, req));
     }
 
     @GetMapping
-    public ResponseEntity<List<FindTrenerResponse>> getAllTrener(@RequestParam(defaultValue = "0") int page,
+    public ResponseEntity<List<FindTrenerResponse>> getAllTreners(@RequestParam(defaultValue = "0") int page,
                                                               @RequestParam(defaultValue = "10") int size) {
 
         return ResponseEntity.ok(trenerService.findAll(page, size));
