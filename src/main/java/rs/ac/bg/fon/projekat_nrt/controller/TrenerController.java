@@ -23,13 +23,30 @@ public class TrenerController {
 
     @PostMapping(consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public ResponseEntity<AddTrenerResponse> add(@Valid @RequestPart("trenerData") AddTrenerRequest req, @RequestPart("file") MultipartFile file) {
+
+
+
+
+
+
+
         System.out.println(req.getGodineIskustva());
+
+
+        System.out.println("TESTTEST");
+
         return ResponseEntity.status(HttpStatus.CREATED).body(trenerService.add(req,file));
     }
 
     @PutMapping("/{id}")
     public ResponseEntity<UpdateTrenerResponse> update(@PathVariable Integer id, @Valid @RequestBody UpdateTrenerRequest req) {
         System.out.println("TEST!");
+
+
+        System.out.println("TEST11");
+
+
+
         return ResponseEntity.ok(trenerService.update(id, req));
     }
 
