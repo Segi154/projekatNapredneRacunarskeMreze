@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: projekat_nrt
+
+  datasource:
+    url: jdbc:mysql://localhost:3307/projekat_nrm?serverTimezone=Europe/Belgrade
+    username: root
+    password: ""
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        jdbc:
+          time_zone: Europe/Belgrade
+jwt:
+  expiration-minutes: 15
+
