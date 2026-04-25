@@ -32,6 +32,13 @@ public class TrenerController {
 
         System.out.println(req.getGodineIskustva());
 
+        System.out.println("test");
+
+        System.out.println("test123");
+
+
+        System.out.println("test1234");
+
 
         System.out.println("TESTTEST");
 
@@ -42,11 +49,9 @@ public class TrenerController {
     public ResponseEntity<UpdateTrenerResponse> update(@PathVariable Integer id, @Valid @RequestBody UpdateTrenerRequest req) {
         System.out.println("TEST!");
 
+        System.out.println("volim");
 
-        System.out.println("TEST11");
-
-
-
+        int x=5;
         return ResponseEntity.ok(trenerService.update(id, req));
     }
 
