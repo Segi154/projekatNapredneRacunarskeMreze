@@ -27,12 +27,15 @@ public class TrenerController {
 
         System.out.println();
         System.out.println();
+        System.out.println();
+
 
 
         System.out.println();
 
         System.out.println();
 
+        System.out.println();
 
 
         System.out.println(req.getGodineIskustva()+" !!!");
