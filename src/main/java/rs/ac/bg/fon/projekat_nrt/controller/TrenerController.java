@@ -30,9 +30,10 @@ public class TrenerController {
 
 
 
-        System.out.println(req.getGodineIskustva());
+        System.out.println(req.getGodineIskustva()+" !!!");
+        System.out.println("PROBA!");
 
-        System.out.println("test");
+
 
         System.out.println("test123");
 
