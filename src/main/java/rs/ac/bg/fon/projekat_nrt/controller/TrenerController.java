@@ -25,8 +25,13 @@ public class TrenerController {
     public ResponseEntity<AddTrenerResponse> add(@Valid @RequestPart("trenerData") AddTrenerRequest req, @RequestPart("file") MultipartFile file) {
 
 
+        System.out.println();
+        System.out.println();
 
 
+        System.out.println();
+
+        System.out.println();
 
 
 
